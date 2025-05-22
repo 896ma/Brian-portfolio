@@ -1,0 +1,86 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #2C003E;
+  color: #F5F5DC;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+h1, h2, h3 {
+  color:#CCCCCC  ;
+}
+
+header {
+  background-color: #1A002B;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.subtitle {
+  color: #79790d;
+  font-style: italic;
+}
+
+section {
+  border-bottom: 1px solid #444;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: square inside;
+  padding-left: 1rem;
+}
+
+a {
+  color: #F5F5DC;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #1A002B;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #F5F5DC;
+}
+
+.ref {
+  font-style: italic;
+  color: #ccc;
+}
+.profile-image {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 2px solid #F5F5DC; /* beige border for style */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive fallback for smaller screens */
+@media screen and (max-width: 768px) {
+  .profile-image {
+    position: static;
+    margin: 1rem auto;
+    display: block;
+  }
+}
